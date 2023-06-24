@@ -45,7 +45,7 @@ function setOperation(operator){
     firstOperand =  currentOperationScreen.textContent;
     currentOperation = operator;
     lastOperationScreen.textContent = `${firstOperand} ${currentOperation}`;
-    currentOperationScreen = '';
+    currentOperationScreen.textContent = '';
     shouldResetScreen = true;
     if (currentOperation !== null) {
         evaluate();
